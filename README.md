@@ -104,7 +104,35 @@ Listed all dependencies for every tier (ML, time series, Flask, visualization, n
 pip install -r requirements.txt
 ```
 
-### ⬜ Step 5 — *(To be defined)*
+### ✅ Step 5 — Logger Setup
+Added project-wide logging in `logger/logger_config.py`, with `logger/__init__.py` calling `configure_logger()` on import. Each run writes a fresh timestamped log file under `logs/` (path resolved via `from_root()`, so it works no matter where a script is run from). Usage anywhere in the project:
+```python
+from customer_intelligence_suite.logger import logging
+logging.info("message")
+```
+
+### ✅ Step 6 — Custom Exception Handling
+Added `exception/exception.py` with a project-wide `CustomerIntelligenceException` class. Wraps any error with the exact file name and line number where it occurred, making debugging faster across all tiers. Usage:
+```python
+import sys
+from customer_intelligence_suite.exception.exception import CustomerIntelligenceException
+
+try:
+    ...
+except Exception as e:
+    raise CustomerIntelligenceException(e, sys) from e
+```
+
+### ✅ Step 7 — Shared Utility Functions
+Added `utils/main_utils.py` with 8 reusable helper functions used across every tier: `read_yaml_file`, `write_yaml_file`, `save_object`, `load_object`, `save_numpy_array_data`, `load_numpy_array_data`, `read_csv_data`, `drop_columns`. Each wraps its logic with logging and `CustomerIntelligenceException`. Verified end-to-end with `demo.py` (covers all 8 functions plus an error-path check). Usage:
+```python
+from customer_intelligence_suite.utils.main_utils import save_object, read_csv_data
+
+df = read_csv_data("data/raw/online_retail_ii.csv")
+save_object("models/tier1_clv/ridge_model.pkl", trained_model)
+```
+
+### ⬜ Step 8 — *(To be defined)*
 
 ---
 
