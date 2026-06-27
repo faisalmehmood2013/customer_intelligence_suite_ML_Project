@@ -1,2 +1,39 @@
-# yahan saari libraries likhi jayengi jo project use karega
-# (pandas, numpy, scikit-learn, flask, etc.) - jab jo library use karein, yahan add karein
+# -------------------- Core Data Handling --------------------
+pandas==2.3.3
+numpy==2.2.6
+
+# -------------------- Machine Learning (Core) --------------------
+# Tier 1 (CLV - Regression): Linear, Ridge, Lasso, ElasticNet, SVR,
+#         Decision Tree Regressor, Random Forest Regressor
+# Tier 2 (Churn - Classification): Logistic Regression, Naive Bayes,
+#         Decision Tree, SVM, Random Forest
+# Tier 3 (Segmentation - Clustering): K-Means, Hierarchical Clustering
+scikit-learn==1.7.2
+
+# -------------------- Time Series (Tier 4: Demand Forecasting) --------------------
+statsmodels==0.14.4      # ARIMA aur classical time series models ke liye
+prophet==1.1.6           # Facebook Prophet - seasonality/trend wale forecasting ke liye
+
+# -------------------- Visualization (EDA + Evaluation Plots) --------------------
+matplotlib==3.10.0
+seaborn==0.13.2
+
+# -------------------- Model Persistence --------------------
+joblib==1.4.2            # Trained models (.pkl) save/load karne ke liye
+
+# -------------------- Flask Web Application --------------------
+flask==3.1.3
+gunicorn==23.0.0         # Production-grade WSGI server (Docker deployment ke liye, Flask dev server ke bajaye)
+
+# -------------------- Configuration Files --------------------
+PyYAML==6.0.2            # config/model.yaml aur config/schema.yaml padhne ke liye
+
+# -------------------- Jupyter Notebooks (Practice/EDA) --------------------
+notebook==7.3.2
+ipykernel==6.29.5
+
+# -------------------- Utilities --------------------
+python-dotenv==1.0.1     # .env file se environment variables (API keys, DB credentials) load karne ke liye
+
+# -------------------- Project Packaging --------------------
+-e .                      # Apne project ko editable package ki tarah install karta hai (setup.py use karke)

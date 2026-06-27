@@ -1,0 +1,3 @@
+app
+customer_intelligence_suite
+tests
