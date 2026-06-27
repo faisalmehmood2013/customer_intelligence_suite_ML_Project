@@ -1,0 +1,3 @@
+# yahan har tier ke model hyperparameters
+# (jaise Ridge ka alpha range, RandomForest ka n_estimators) YAML format mein
+# define karenge - taake code badle bina settings change ho saken.

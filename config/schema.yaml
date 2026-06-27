@@ -1,0 +1,4 @@
+# yahan raw dataset ka EXPECTED schema define karenge
+# (kaunse columns hone chahiye, kya data type, kya range) -
+# data_validation.py isko use karega yeh check karne ke liye ke
+# naya data 'sahi shape' mein hai ya nahi.

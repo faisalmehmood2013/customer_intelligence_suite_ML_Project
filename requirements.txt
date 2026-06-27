@@ -1,0 +1,2 @@
+# yahan saari libraries likhi jayengi jo project use karega
+# (pandas, numpy, scikit-learn, flask, etc.) - jab jo library use karein, yahan add karein

@@ -1,0 +1,7 @@
+# Faisal bhai: yahan un files/folders ke naam likhenge jo Docker
+# image mein COPY nahi honi chahiye (jaise: __pycache__, .git, data/raw/*.csv agar bohot bara ho)
+__pycache__/
+*.pyc
+.git
+.env
+notebooks/
