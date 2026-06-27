@@ -1,3 +1,44 @@
-logs/
-customer_intelligence_suite.egg-info/
+# -------------------- Python Generated Files --------------------
 __pycache__/
+*.py[cod]
+*$py.class
+
+# -------------------- Package Metadata (pip install -e) --------------------
+*.egg-info/
+*.egg
+build/
+dist/
+
+# -------------------- Virtual Environments --------------------
+venv/
+env/
+.venv/
+ENV/
+
+# -------------------- Logging --------------------
+logs/
+*.log
+
+# -------------------- Jupyter Notebook Checkpoints --------------------
+.ipynb_checkpoints/
+
+# -------------------- Environment Variables / Secrets --------------------
+.env
+
+# -------------------- Data Files) --------------------
+data/raw/*.csv
+data/processed/*.csv
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# -------------------- Trained Models  --------------------
+models/*.pkl
+!models/.gitkeep
+
+# -------------------- IDE / Editor Specific --------------------
+.vscode/
+.idea/
+
+# -------------------- OS Specific --------------------
+.DS_Store
+Thumbs.db
