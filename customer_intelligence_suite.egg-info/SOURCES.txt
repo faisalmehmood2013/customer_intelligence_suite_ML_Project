@@ -20,6 +20,7 @@ customer_intelligence_suite/entity/__init__.py
 customer_intelligence_suite/entity/artifact_entity.py
 customer_intelligence_suite/entity/config_entity.py
 customer_intelligence_suite/exception/__init__.py
+customer_intelligence_suite/exception/exception.py
 customer_intelligence_suite/logger/__init__.py
 customer_intelligence_suite/logger/logger_config.py
 customer_intelligence_suite/pipeline/__init__.py

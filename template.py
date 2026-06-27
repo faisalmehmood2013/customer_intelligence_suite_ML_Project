@@ -39,8 +39,10 @@ list_of_files = [
     f"{project_name}/entity/artifact_entity.py",
 
     f"{project_name}/exception/__init__.py",
+    f"{project_name}/exception/exception.py",
 
     f"{project_name}/logger/__init__.py",
+    f"{project_name}/logger/logger_config.py",
 
     f"{project_name}/utils/__init__.py",
     f"{project_name}/utils/main_utils.py",

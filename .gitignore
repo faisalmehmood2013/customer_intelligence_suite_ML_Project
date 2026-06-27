@@ -1,1 +1,3 @@
 logs/
+customer_intelligence_suite.egg-info/
+__pycache__/
