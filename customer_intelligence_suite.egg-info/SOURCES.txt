@@ -1,3 +1,4 @@
+README.md
 setup.py
 app/__init__.py
 app/routes/__init__.py
@@ -20,6 +21,7 @@ customer_intelligence_suite/entity/artifact_entity.py
 customer_intelligence_suite/entity/config_entity.py
 customer_intelligence_suite/exception/__init__.py
 customer_intelligence_suite/logger/__init__.py
+customer_intelligence_suite/logger/logger_config.py
 customer_intelligence_suite/pipeline/__init__.py
 customer_intelligence_suite/pipeline/prediction_pipeline.py
 customer_intelligence_suite/pipeline/training_pipeline.py

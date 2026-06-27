@@ -75,6 +75,8 @@ list_of_files = [
     "requirements.txt",
     "Dockerfile",
     ".dockerignore",
+    "README.md",
+    ".gitignore",
     "setup.py",
     "config/model.yaml",
     "config/schema.yaml",

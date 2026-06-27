@@ -35,5 +35,8 @@ ipykernel==6.29.5
 # -------------------- Utilities --------------------
 python-dotenv==1.0.1     # .env file se environment variables (API keys, DB credentials) load karne ke liye
 
+
+from-root==1.3.0        # Project ka root folder reliably dhundta hai (logger ke liye - logs/ hamesha sahi jagah banegi)
+
 # -------------------- Project Packaging --------------------
 -e .                      # Apne project ko editable package ki tarah install karta hai (setup.py use karke)
